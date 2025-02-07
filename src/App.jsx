@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import First from "./First";
-import Second from "./Second";
+import FirstPage from "./FirstPage";
+import SecondPage from "./SecondPage";
 import NotFound from "./NotFound";
 import "./App.css";
 
@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "first",
-        element: <First />,
+        element: <FirstPage />,
       },
       {
         path: "second",
-        element: <Second />,
+        element: <SecondPage />,
       },
       {
         path: "*",
