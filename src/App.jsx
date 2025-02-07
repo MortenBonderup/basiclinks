@@ -10,11 +10,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/first",
+        path: "first",
         element: <First />,
       },
       {
-        path: "/second",
+        path: "second",
         element: <Second />,
       },
     ],
