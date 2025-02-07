@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, Redirect } from "react-router-dom";
 import Layout from "./Layout";
 import First from "./First";
 import Second from "./Second";
@@ -11,7 +11,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true, // This sets the default route
-        element: <Layout />, // Your default component
+        element: <Redirect path="/basiclinks/" />, // Your default component
+      },
+      {
+        path: "/basiclinks/",
+        element: <Layout />
       },
       {
         path: "/first",
