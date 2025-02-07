@@ -6,9 +6,13 @@ import "./App.css";
 
 const router = createBrowserRouter([
   {
-    path: "/basiclinks/",
+    path: "/",
     element: <Layout />,
     children: [
+      {
+        index: true, // This sets the default route
+        element: <Layout />, // Your default component
+      },
       {
         path: "/first",
         element: <First />,
