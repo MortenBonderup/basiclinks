@@ -10,6 +10,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
+        index: true, // This sets the default route
+        element: <Layout />, // Your default component
+      },
+      {
         path: "/first",
         element: <First />,
       },
