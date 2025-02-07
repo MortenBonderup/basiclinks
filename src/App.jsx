@@ -14,10 +14,6 @@ const router = createBrowserRouter([
         element: <Layout />, // Your default component
       },
       {
-        path: "/basiclinks/",
-        element: <Layout />
-      },
-      {
         path: "/first",
         element: <First />,
       },
